@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clash Royale — Coffres</title>
+<style>
+
+body {
+ font-family: 'Verdana', sans-serif; 
+ margin: 0;
+padding: 0;
+ background: linear-gradient(to bottom, #fef9f4, #ffe6cc);
+ color: #333333;
+ font-size: 14px;
+line-height: 1.4;
+}
+.wrap {
+ max-width: 400px;
+ margin: 20px auto;
+ padding: 15px;
+}
+h1 {
+ font-size: 1.5rem;
+ margin-bottom: 10px;
+ color: #8b2be2; 
+text-align: center;
+}.panel {
+background: #fff8f0;
+border: 1px solid #ffd8a8;
+padding: 10px;
+ border-radius: 8px;
+ margin-bottom: 15px;
+box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.panel h2 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #e07b39;
+}
+ul {
+ margin: 0;
+padding-left: 15px;
+}
+li { margin-bottom: 6px;
+}
+.chip {
+ display: inline-block;
+ background: #ffe6cc;
+border: 1px solid #ffd8a8;
+padding: 2px 5px;
+border-radius: 5px;
+font-size: 10px;
+margin-right: 3px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p style="text-align:center; font-size:1rem; margin-bottom:15px;">Bienvenue sur ma page qui explique le type de cartes et coffres</p>
+<h1>Coffres & Rareté</h1>
+    <div class="panel">
+    <h2>Coffres</h2>
+        <ul>
+<li>Or — peu de cartes</li>
+ <li>Argent — cartes normales</li>
+<li>Magique — cartes rares/épiques</li>
+ <li>Géant — cartes rares garanties</li>
+ <li>Légendaire — chance carte légendaire</li>
+ </ul>
+ </div>
+ <div class="panel">
+ <h2>Rareté des cartes</h2>
+ <ul>
+<li>Commune — fréquente</li>
+<li>Rare — moins fréquente</li>
+<li>Épique — rare</li>
+<li>Légendaire — très rare</li>
+ </ul>
+ </div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Info-bulle</title>
+<style>
+/* Style de l'info-bulle */
+.tooltip {
+  position: relative; /* Nécessaire pour positionner la bulle */
+  display: inline-block;
+  cursor: pointer;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Le texte de l'info-bulle */
+.tooltip .tooltiptext {
+  visibility: hidden; /* cachée par défaut */
+  width: 180px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+  
+  /* Positionnement */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* au-dessus du texte */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Animation */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Triangle sous la bulle */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* en bas de la bulle */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Affichage au survol */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<h1>
+  <span class="tooltip">Bienvenu
+    <span class="tooltiptext">Bienvenue sur ma page !</span>
+  </span>
+</h1>
+
+</body>
+</html>
