@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decks Clash Royale</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Bienvenue sur les decks de Clash Royale</h1>
+
+<p>Comment jouer ?</p>
+
+<div class="note">🤔 Clash Royale est un jeu mobile gratuit développé par Supercell.
+Il se joue entièrement en version dématérialisée.
+Pas besoin de CD ou de téléchargement sur un site externe.
+Il suffit d’avoir un smartphone ou une tablette.
+Va sur le Play Store (Android) ou l’App Store (iPhone).
+Tape Clash Royale dans la barre de recherche.
+Appuie sur Installer et attends la fin du téléchargement.
+Une fois installé, ouvre le jeu.
+Connecte-toi avec ton compte Supercell ID ou crée-en un.
+Suis le tutoriel pour apprendre les bases du jeu.
+Le but est de détruire les tours ennemies avec tes cartes.
+Tu peux jouer en ligne contre d’autres joueurs du monde entier.
+Tout se fait via Internet — aucune version physique n’existe.!</div>
+
+<button id="voirDeckBtn">Voir/Masquer les Decks</button>
+
+<div id="deckList">
+    <h2>Mes Decks Clash Royale</h2>
+    <ul id="decks"></ul>
+</div>
+
+<h1>Voici une trailer</h1>
+<iframe 
+    src="https://www.dailymotion.com/embed/video/x4nmth1" 
+    width="640" 
+    height="360" 
+    allowfullscreen>
+</iframe>
+
+<a href="https://supercell.com/en/games/clashroyale/" target="_blank" class="bottom-right"></a>
+
+<script>
+const decks = [
+  {name:"Deck 1", cards:[
+    {name:"Géant", img:"https://i.pinimg.com/736x/8d/7b/78/8d7b788816c700286472026f547798ca.jpg"},
+    {name:"Sorcier", img:"https://i.pinimg.com/736x/a2/06/6f/a2066fcf8954d733ecb3f1144c8996a0.jpg"},
+    {name:"Archers", img:"https://i.pinimg.com/736x/e6/fe/6b/e6fe6b9f8d238e80348ae8a44c4a0871.jpg"},
+    {name:"Boule de feu", img:"https://i.pinimg.com/736x/e0/8d/94/e08d94fc1b45154cfaebe22ae911c383.jpg"}
+  ]},
+  {name:"Deck 2", cards:[
+    {name:"Chevalier", img:"https://i.pinimg.com/736x/a7/37/2b/a7372b763233222391a2a77c4513bff3.jpg"},
+    {name:"Megachevalier", img:"https://i.pinimg.com/736x/b4/76/2b/b4762b587e97314da01127b6ac0f5554.jpg"},
+    {name:"Mousquetaire", img:"https://i.pinimg.com/736x/52/ba/03/52ba03d77f10957a9af2241a9c7a9a74.jpg"}
+  ]},
+  {name:"Deck 3", cards:[
+    {name:"Mini P.E.K.K.A", img:"https://i.pinimg.com/736x/8b/4b/23/8b4b2337c58074d58d519ddbcd839323.jpg"},
+    {name:"Bébé Dragon", img:"https://i.pinimg.com/736x/38/5a/70/385a703a8d75035b624dd1e21abe34ac.jpg"},
+    {name:"Zap", img:"https://i.pinimg.com/736x/bb/f2/6a/bbf26afea20e2ac107dbe5b62491ca5c.jpg"}
+  ]}
+];
+
+document.getElementById("voirDeckBtn").addEventListener("click", function() {
+ const deckList = document.getElementById('deckList');
+if(deckList.style.display === 'block'){
+ deckList.style.display = 'none';
+ } else {
+ const deckUl = document.getElementById('decks');
+  if(deckUl.innerHTML.trim() === ""){
+ deckUl.innerHTML = "";
+  decks.forEach(deck => {
+ const li = document.createElement('li');
+ const title = document.createElement('strong');
+ title.textContent = deck.name + " : ";
+ li.appendChild(title);
+
+ deck.cards.forEach(card => {
+ const cardDiv = document.createElement('span');
+ cardDiv.className = 'card';
+const img = document.createElement('img');
+ img.src = card.img;
+ const span = document.createElement('span');
+span.textContent = card.name;
+ cardDiv.appendChild(img);
+   cardDiv.appendChild(span);
+ li.appendChild(cardDiv);
+ });
+ deckUl.appendChild(li);
+});
+}
+ deckList.style.display = 'block';
+}
+});
+</script>
+
+</body>
+</html>
+<!--je sais pas -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Paragraphe Justifié</title>
+<style>
+  .clash {
+    text-align: justify; /* justifie le texte */
+    line-height: 1.6;   /* espace entre les lignes pour une lecture plus agréable */
+    font-family: Arial, sans-serif; /* police optionnelle */
+  }
+</style>
+</head>
+<body>
+
+<p class="clash">
+Clash Royale est un jeu de stratégie en temps réel où vous collectionnez des cartes représentant vos troupes, sorts et bâtiments. Chaque joueur place ses cartes sur le champ de bataille pour détruire les tours de l’adversaire tout en défendant les siennes. Le but est de détruire la tour principale ennemie avant la fin du temps imparti. Utilisez vos cartes avec stratégie, anticipez les mouvements de l’adversaire et combinez vos attaques pour maximiser vos chances de victoire. Les matchs se jouent généralement en 1 contre 1 ou 2 contre 2, et chaque victoire vous rapporte des trophées pour progresser dans les arènes.
+</p>
+
+</body>
+</html>
+</p></p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page principale</title>
+</head>
+<body>
+  
+</body>
+</html>
+<a href="bilal.html" target="_blank">Cliquez ici</a>
+<p><b><i><u>VIVE LYCEE SAINT JO  !</u></i></b></p>
+<img src="https://i.pinimg.com/1200x/7e/98/23/7e9823d096444df8bbf377e786ca176c.jpg" 
+     alt="Image" 
+     style="opacity: 0.5; width:200px; height:auto;">
+<button>Regarde c est gros  !</button>
+
+<style>
+button {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4081; 
+    transform: scale(1.2);    
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5); 
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page avec bouton retour haut</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 50px;
+        margin: 0;
+        background-color: #1a1a2e;
+        color: #fff;
+        min-height: 2000px; /* pour tester le scroll */
+    }
+
+    
+    #backToTop {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        padding: 12px 20px;
+        background-color: #6200ea;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        display: none; /* caché par défaut */
+        transition: background-color 0.3s, transform 0.2s;
+        z-index: 1000;
+    }
+
+    #backToTop:hover {
+        background-color: #ff4081;
+        transform: scale(1.1);
+    }
+</style>
+</head>
+<body>
+
+
+
+<button id="backToTop" onclick="scrollToTop()">⬆ Retour en haut</button>
+
+<script>
+
+    window.onscroll = function() {toggleButton()};
+
+    function toggleButton() {
+        const button = document.getElementById("backToTop");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Image Disparaît au Survol</title>
+<style>
+  .image-hover {
+    transition: opacity 0.5s; /* transition douce */
+  }
+
+  .image-hover:hover {
+    opacity: 0; /* rend l'image transparente au survol */
+  }
+</style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Ombre sur image</title>
+<style>
+  .image-hover {
+    transition: all 0.3s ease; /* effet doux au survol */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* ombre normale */
+  }
+
+  .image-hover:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7); /* ombre plus grande au survol */
+    transform: scale(1.05); /* léger zoom au survol */
+  }
+</style>
+</head>
+<body>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Emmanuel_Macron_-_June_2025_%283x4_cropped%29.jpg" 
+     alt="Image" 
+     class="image-hover" 
+     width="300">
+
+</body>
+</html>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>tete de con</title>
+<style>
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Le texte de la note */
+  .note {
+    visibility: hidden;      /* caché par défaut */
+    width: 200px;
+    background-color: #333;  /* fond sombre */
+    color: #fff;             /* texte blanc */
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    
+    position: absolute;
+    bottom: 100%;            /* au-dessus de l'image */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* Affichage de la note au survol de l'image */
+  .image-container:hover .note {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<div class="image-container">
+  <img src="https://resize-elle.ladmedia.fr/r/625,,forcex/crop/625,804,center-middle,forcex,ffffff/img/var/plain_site/storage/images/personnalites/emmanuel-macron/88384670-1-fre-FR/Emmanuel-Macron.jpg" alt="Image" width="300">
+  <div class="note">macron tete de con !</div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Bouton Moderne avec Ombre</title>
+<style>
+  .btn-modern {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* dégradé violet → bleu */
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* ombre douce */
+  }
+
+  .btn-modern:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5); /* ombre plus grande */
+    transform: translateY(-4px) scale(1.05);      /* léger zoom + soulèvement */
+  }
+
+  .btn-modern:active {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* ombre réduite quand cliqué */
+    transform: translateY(-2px) scale(0.98);    /* effet pressé */
+  }
+</style>
+</head>
+<body>
+
+<button class="btn-modern">Cliquez-moi</button>
+
+</body>
+</html>
+<a href="bilal.html" title="Cliquez ici pour visiter le site exemple">
+  Visiter le site
+</a>
